@@ -72,7 +72,7 @@ var poll = function( ) {
     ws.on("error", function(err) {
         waiting = true;
         console.log("Waiting for RCON to come up...");
-        setTimeout(poll, 5000);
+        setTimeout(poll, 120000);
     });
 
     ws.on("close", function() {
